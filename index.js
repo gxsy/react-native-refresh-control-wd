@@ -6,23 +6,18 @@
  * LICENSE file in the root directory of this source tree. An additional grant
  * of patent rights can be found in the PATENTS file in the same directory.
  *
- * @providesModule RefreshControl2
+ * @providesModule RefreshControlExpand
  * @flow
  */
 'use strict';
 
-const ColorPropType = require('ColorPropType');
-const NativeMethodsMixin = require('NativeMethodsMixin');
-const Platform = require('Platform');
-const React = require('React');
-const PropTypes = require('prop-types');
-const ViewPropTypes = require('ViewPropTypes');
-
-const createReactClass = require('create-react-class');
-const requireNativeComponent = require('requireNativeComponent');
+import React from 'react';
+import { ColorPropType, NativeMethodsMixin, Platform, ViewPropTypes, requireNativeComponent, UIManager } from 'react-native';
+import PropTypes from 'prop-types';
+import createReactClass from 'create-react-class';
 
 if (Platform.OS === 'android') {
-  var RefreshLayoutConsts = require('UIManager').AndroidSwipeRefreshLayout.Constants;
+  var RefreshLayoutConsts = UIManager.AndroidSwipeRefreshLayout.Constants;
 } else {
   var RefreshLayoutConsts = {SIZE: {}};
 }
@@ -73,7 +68,7 @@ if (Platform.OS === 'android') {
  * in the `onRefresh` function otherwise the refresh indicator will stop immediately.
  */
 // $FlowFixMe(>=0.41.0)
-const RefreshControl2 = createReactClass({
+const RefreshControlExpand = createReactClass({
   displayName: 'RefreshControlExpand',
   statics: {
     SIZE: RefreshLayoutConsts.SIZE,
