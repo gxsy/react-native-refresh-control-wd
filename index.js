@@ -87,7 +87,7 @@ const RefreshControlExpand = createReactClass({
      */
     refreshing: PropTypes.bool.isRequired,
     /**
-     *  android
+     * android
      * Called when the view pull distance
      */
     onPullDistance: PropTypes.func,
@@ -146,7 +146,7 @@ const RefreshControlExpand = createReactClass({
      * @platform android
      */
     // progressViewOffset: PropTypes.number,
-
+Other apis are consistent with official except "progressViewOffset"
   },
 
   _nativeRef: (null: any),

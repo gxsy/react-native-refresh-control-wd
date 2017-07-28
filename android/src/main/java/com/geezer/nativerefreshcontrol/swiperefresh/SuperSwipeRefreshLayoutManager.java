@@ -151,13 +151,9 @@ public class SuperSwipeRefreshLayoutManager extends ViewGroupManager<ReactSuperS
                     imageView.setVisibility(View.GONE);
                     progressBar.setVisibility(View.VISIBLE);
                 }
-                view.postDelayed(new Runnable() {
-                    @Override
-                    public void run() {
-                        reactContext.getNativeModule(UIManagerModule.class).getEventDispatcher()
-                                .dispatchEvent(new RefreshEvent(view.getId()));
-                    }
-                }, 3000);
+
+                reactContext.getNativeModule(UIManagerModule.class).getEventDispatcher()
+                    .dispatchEvent(new RefreshEvent(view.getId()));
 
             }
 
