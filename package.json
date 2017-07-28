@@ -1,0 +1,22 @@
+{
+  "name": "react-native-refresh-control-wd",
+  "version": "0.0.1",
+  "description": "react native refresh control android expand",
+  "main": "index.js",
+  "scripts": {
+    "test": "jest"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/gxsy/react-native-refresh-control-wd.git"
+  },
+  "keywords": [
+    "RefreshControl"
+  ],
+  "author": "大叔",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/gxsy/react-native-refresh-control-wd/issues"
+  },
+  "homepage": "https://github.com/gxsy/react-native-refresh-control-wd#readme"
+}
