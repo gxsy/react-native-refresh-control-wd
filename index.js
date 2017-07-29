@@ -146,7 +146,7 @@ const RefreshControlExpand = createReactClass({
      * @platform android
      */
     // progressViewOffset: PropTypes.number,
-Other apis are consistent with official except "progressViewOffset"
+
   },
 
   _nativeRef: (null: any),
